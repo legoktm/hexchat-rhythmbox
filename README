@@ -1,0 +1,7 @@
+A very simple /np plugin for hexchat using rhythmbox.
+I couldn't find one online, so I just wrote one.
+
+Just drop plugin.py inside ~/.config/hexchat/ and it'll load
+on startup automatically.
+
+Released into the public domain.
