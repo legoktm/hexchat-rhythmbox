@@ -1,5 +1,5 @@
 __module_name__ = "rhythmbox"
-__module_version__ = "1.0"
+__module_version__ = "1.1"
 __module_description__ = "Plugin for Rhythymbox integration"
 
 import hexchat
@@ -14,5 +14,6 @@ def np(word, word_eol, userdata):
     ])
     output = output.strip()  # Has a trailing newline
     hexchat.command('me NP: %s' % output)
+    return hexchat.EAT_ALL
 
 hexchat.hook_command('np', np)
