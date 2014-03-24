@@ -13,6 +13,6 @@ def np(word, word_eol, userdata):
         '%tt - %ta'
     ])
     output = output.strip()  # Has a trailing newline
-    hexchat.command('me NP: {}'.format(output))
+    hexchat.command('me NP: %s' % output)
 
 hexchat.hook_command('np', np)
